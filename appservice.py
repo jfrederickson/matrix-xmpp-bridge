@@ -6,11 +6,6 @@ import xmpp_component as xmpp
 import ConfigParser
 app = Flask(__name__)
 
-# Application service access token - protect this with your life!
-#TOKEN = 'wfghWEGh3wgWHEf3478sHFWE'
-# API URL for your Matrix homeserver
-#APIURL = 'http://localhost:8008/_matrix/client/api/v1'
-
 config = ConfigParser.ConfigParser()
 config.read('/etc/mxbridge.conf')
 TOKEN = config.get("Matrix", "token")
