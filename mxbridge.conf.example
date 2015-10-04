@@ -1,0 +1,11 @@
+[Matrix]
+token=supersekrettoken
+api_url=http://localhost:8008/_matrix/client/api/v1
+room_id=!CvcvRuDYDzTOzfKKgh:localhost
+as_api_url=http://localhost:5000
+
+[XMPP]
+muc_room=test@conference.example.com
+nick=mxbridge
+username=test@example.com
+#password=supersekret

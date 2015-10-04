@@ -1,0 +1,21 @@
+# registration.yaml
+
+# this is the base URL of the application service
+url: "http://localhost:5000"
+
+# This is the token that the AS should use as its access_token when using the Client-Server API
+# This can be anything you want.
+as_token: supersekret
+
+# This is the token that the HS will use when sending requests to the AS.
+# This can be anything you want.
+hs_token: supersekret
+
+# this is the local part of the desired user ID for this AS (in this case @logging:localhost)
+sender_localpart: mxbridge
+namespaces:
+  users: []
+  rooms: []
+  aliases:
+    - exclusive: false
+      regex: "#xmpp.*"
